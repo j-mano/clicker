@@ -27,3 +27,32 @@ function addStickman(PosX, PosY){
 
     addEnemie(enemyObject)
 }
+
+function addOrgr(PosX, PosY){
+    var enemyObject = {Name:"", Helht:"", armor:"",Flying:"",PosX:"",PosY:"",ImageName:"",Width:"",Height:""}
+    var orge = Orge;
+
+    enemyObject.Name          = stickman.name;
+    enemyObject.PosX          = PosX;
+    enemyObject.PosY          = PosY;
+    enemyObject.ImageName     = "Orge";
+    enemyObject.Width         = 50;
+    enemyObject.Height        = 75;
+
+    addEnemie(enemyObject)
+}
+
+function addBird(PosX, PosY){
+    var enemyObject = {Name:"", Helht:"", armor:"",Flying:"",PosX:"",PosY:"",ImageName:"",Width:"",Height:""}
+    var bird    = Bird;
+
+    enemyObject.Name          = stickman.name;
+    enemyObject.Flying        = true;
+    enemyObject.PosX          = PosX;
+    enemyObject.PosY          = PosY;
+    enemyObject.ImageName     = "Bird";
+    enemyObject.Width         = 15;
+    enemyObject.Height        = 30;
+
+    addEnemie(enemyObject)
+}
