@@ -10,11 +10,14 @@ function gameLoop() {
     if(gamestate == "Running"){
         EnemiesAIUpdatere();
         spawnUpdate();
+        DrawUpdate();
     }
-
-    DrawUpdate();
+    else{
+        // Update last
+        printoutUpdate();
+    }
+    
     // Gui interface is updated from interface.
-
     window.requestAnimationFrame(gameLoop);
 }
 

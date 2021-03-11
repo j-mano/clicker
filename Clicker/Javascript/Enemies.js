@@ -57,5 +57,3 @@ var Bird = function() {
     this.Flying = false;
     this.ImageName  = "Stickfigure";
   };
-
-var enemyObject = {Name:"", Helht:"", armor:"",Flying:"",PosX:"",PosY:"",ImageName:"",Width:"",Height:""}

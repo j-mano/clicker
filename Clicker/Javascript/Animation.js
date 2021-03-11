@@ -3,7 +3,7 @@ function DrawUpdate(){
     DrawEnviroment();
     drawEnemies();
 
-    // Update last
+    // Update last. interface
     printoutUpdate();
 }
 

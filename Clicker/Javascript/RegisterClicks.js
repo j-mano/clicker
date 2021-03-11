@@ -12,12 +12,14 @@ function canvasclick()
     elem.addEventListener('click', function(event) {
         var x = event.pageX - elemLeft,
             y = event.pageY - elemTop;
+        var id = 0;
 
         // Collision detection between clicked offset and element.
         elements.forEach(function(element) {
-            if (y > element.top && y < element.top + element.height 
-                && x > element.left && x < element.left + element.width) {
-                alert('clicked an element');
+            id = id + 1;
+            if (y > element.top && y < element.top + element.Height 
+                && x > element.left && x < element.left + element.Width) {
+                removeEnemie(id);
             }
         });
 

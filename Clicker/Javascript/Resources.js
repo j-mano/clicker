@@ -24,6 +24,11 @@ function GetEnemies(){
     return arrayOfEnemies;
 }
 
+// id is the number aline in the arrayofenemies list
+function removeEnemie(id){
+    arrayOfEnemies.splice(id);
+}
+
 function addEnemie(enemyObject){
     arrayOfEnemies.push(enemyObject);
 }
