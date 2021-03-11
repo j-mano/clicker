@@ -6,7 +6,7 @@ function canvasclick()
     elemLeft = elem.offsetLeft + elem.clientLeft,
     elemTop = elem.offsetTop + elem.clientTop,
     context = elem.getContext('2d'),
-    elements = [];
+    elements = GetEnemies();
 
     // Add event listener for `click` events.
     elem.addEventListener('click', function(event) {
@@ -22,19 +22,4 @@ function canvasclick()
         });
 
     }, false);
-
-    // Add element.
-    elements.push({
-        colour: '#05EFFF',
-        width: 150,
-        height: 100,
-        top: 20,
-        left: 15
-    });
-
-    // Render elements.
-    elements.forEach(function(element) {
-        context.fillStyle = element.colour;
-        context.fillRect(element.left, element.top, element.width, element.height);
-    });​
 }

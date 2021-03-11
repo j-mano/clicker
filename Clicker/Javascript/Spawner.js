@@ -2,28 +2,28 @@ function spawnUpdate(){
 }
 
 function SpawnerStart(){
+    setInterval(myTimer, 5000);
+}
+
+function myTimer() {
     InstaniateEnemies();
 }
 
-function prepEnemies(){
-
-}
-
 function InstaniateEnemies(){
-    addStickman();
+    addStickman(75,350);
+    addStickman(50,250);
 }
 
-function addStickman(){
-    var enemy       = enemyObject;
+function addStickman(PosX, PosY){
+    var enemyObject = {Name:"", Helht:"", armor:"",Flying:"",PosX:"",PosY:"",ImageName:"",Width:"",Height:""}
     var stickman    = StickPerson;
 
-    enemy.Name          = stickman.name;
-    enemy.PosX          = 150;
-    enemy.PosY          = 150;
-    enemy.armor         = stickman.armor;
-    enemy.ImageName     = "Stickfigure";
-    enemy.Width         = 50;
-    enemy.Height        = 50;
+    enemyObject.Name          = stickman.name;
+    enemyObject.PosX          = PosX;
+    enemyObject.PosY          = PosY;
+    enemyObject.ImageName     = "Stickfigure";
+    enemyObject.Width         = 25;
+    enemyObject.Height        = 50;
 
-    addEnemie(enemy)
+    addEnemie(enemyObject)
 }

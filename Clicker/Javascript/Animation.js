@@ -20,6 +20,7 @@ function drawEnemies(){
     var ctx     = canvas.getContext("2d");
 
     var enemies = GetEnemies();
+    console.log(enemies);
 
     // The name of the Imagages are the images of the files of images as of in enemies.js file.
     enemies.forEach(Enemy => {

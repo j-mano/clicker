@@ -26,8 +26,6 @@ function GetEnemies(){
 
 function addEnemie(enemyObject){
     arrayOfEnemies.push(enemyObject);
-
-    console.log(enemyObject);
 }
 
 function GetEnviromentObjects(){
