@@ -1,3 +1,5 @@
+// Here do we see all the stats of all enemies. Dont foreget to load in image of the enemy in the animationfile.
+
 var StickPerson = function() {
     this.name       = "Stickman";
     this.Helht      = 50;

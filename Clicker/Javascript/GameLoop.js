@@ -6,6 +6,7 @@ start();
 function gameLoop() {
     spawnUpdate();
     DrawUpdate();
+    EnemiesAIUpdatere();
     window.requestAnimationFrame(gameLoop);
 }
 

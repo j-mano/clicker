@@ -18,7 +18,6 @@ function addgold(goldInput)
 }
 
 function GetEnemies(){
-    
     return arrayOfEnemies;
 }
 
