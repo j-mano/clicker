@@ -12,5 +12,9 @@ function addgold(goldInput)
 }
 
 function GetEnemies(){
+    return arrayOfEnemies;
+}
 
+function addEnemie(enemyObject){
+    arrayOfEnemies.push(enemyObject);
 }

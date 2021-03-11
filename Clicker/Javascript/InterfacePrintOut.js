@@ -1,4 +1,4 @@
-// Everything in this js is with canvas interface and information printout to do with
+
 function printoutUpdate(){
     PrintOutGold(getGold())
 }
