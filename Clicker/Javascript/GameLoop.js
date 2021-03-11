@@ -4,9 +4,17 @@ window.requestAnimationFrame(gameLoop);
 start();
 
 function gameLoop() {
-    spawnUpdate();
+    var gamestate = GetGameState();
+
+    // The state must be running to run here.
+    if(gamestate == "Running"){
+        EnemiesAIUpdatere();
+        spawnUpdate();
+    }
+
     DrawUpdate();
-    EnemiesAIUpdatere();
+    // Gui interface is updated from interface.
+
     window.requestAnimationFrame(gameLoop);
 }
 

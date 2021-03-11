@@ -4,6 +4,9 @@ var arrayOfEnemies      = [];
 var EnviromentObject    = [];
 var generalHelth        = 5;
 
+// Valid gamestates = "Won", "Running", "Paused", "Lost", "Error";
+var gameRunState        = "Running";
+
 function getGold(){
     return gold;
 }
@@ -29,6 +32,10 @@ function addEnemie(enemyObject){
 
 function GetEnviromentObjects(){
     return EnviromentObject;
+}
+
+function GetGameState(){
+    return gameRunState;
 }
 
 function addToEnviromentObject(){

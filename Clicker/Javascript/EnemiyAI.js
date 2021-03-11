@@ -1,5 +1,6 @@
 function EnemiesAIUpdatere(){
     MovesToCastle();
+    ValidateEnemiesInLocation();
 }
 
 function MovesToCastle(){
@@ -12,11 +13,11 @@ function MovesToCastle(){
 function ValidateEnemiesInLocation(){
     var canvas  = document.getElementById("GameCanvas");
 
-    var XLocationLimit = (canvas.PosX / 5)*4
+    var XLocationLimit = (canvas.PosX / 5) * 4
 
     GetEnemies().forEach(Enemy => {
         if(XLocationLimit > Enemy.PosX){
-            // Victory condition.
+            gameRunState = "Won"
         }
     });
 }

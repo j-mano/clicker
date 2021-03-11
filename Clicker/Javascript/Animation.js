@@ -1,8 +1,10 @@
 function DrawUpdate(){
     clearcanvas();
-    printoutUpdate();
     DrawEnviroment();
     drawEnemies();
+
+    // Update last
+    printoutUpdate();
 }
 
 // Loading in the images / sprites of all enemies. Add them here to animate it. Dont Forget to add the if code in the foreachcode.
