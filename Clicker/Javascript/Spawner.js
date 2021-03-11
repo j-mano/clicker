@@ -14,16 +14,16 @@ function InstaniateEnemies(){
 }
 
 function addStickman(){
-    var enemy = enemyObject;
-    var stickman = StickPerson;
+    var enemy       = enemyObject;
+    var stickman    = StickPerson;
 
     enemy.Name          = stickman.name;
-    enemy.PosX          = stickman.PosX;
-    enemy.PosY          = stickman.PosY;
+    enemy.PosX          = 150;
+    enemy.PosY          = 150;
     enemy.armor         = stickman.armor;
-    enemy.ImageName     = stickman.ImageName;
-    enemy.Width         = stickman.Width;
-    enemy.Height        = stickman.Height;
+    enemy.ImageName     = "Stickfigure";
+    enemy.Width         = 50;
+    enemy.Height        = 50;
 
     addEnemie(enemy)
 }

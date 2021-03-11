@@ -3,9 +3,11 @@ var StickPerson = function() {
     this.Helht      = 50;
     this.armor      = 1;
     this.Flying     = false;
-    this.ImageName  = "Stick-figure";
-    this.Height     = 2;
-    this.Width      = 2;
+    this.ImageName  = "Stickfigure";
+    this.Height     = 35;
+    this.Width      = 20;
+    this.PosX       = 50;
+    this.PosY       = 50;
   };
 
 var StickPerson2 = function() {
@@ -13,9 +15,11 @@ var StickPerson2 = function() {
     this.Helht      = 50;
     this.armor      = 3;
     this.Flying     = false;
-    this.ImageName  = "Stick-figure";
-    this.Height     = 2;
-    this.Width      = 2;
+    this.ImageName  = "Stickfigure";
+    this.Height     = 35;
+    this.Width      = 20;
+    this.PosX       = 50;
+    this.PosY       = 50;
   };
 
 var StickPerson3 = function() {
@@ -23,9 +27,11 @@ var StickPerson3 = function() {
     this.Helht      = 75;
     this.armor      = 3;
     this.Flying     = false;
-    this.ImageName  = "Stick-figure";
-    this.Height     = 2;
-    this.Width      = 2;
+    this.ImageName  = "Stickfigure";
+    this.Height     = 35;
+    this.Width      = 20;
+    this.PosX       = 50;
+    this.PosY       = 50;
   };
 
 var Orge = function() {
@@ -47,6 +53,7 @@ var Bird = function() {
     this.Helht = 150;
     this.armor = 0;
     this.Flying = false;
+    this.ImageName  = "Stickfigure";
   };
 
 var enemyObject = {Name:"", Helht:"", armor:"",Flying:"",PosX:"",PosY:"",ImageName:"",Width:"",Height:""}

@@ -1,0 +1,1 @@
+var EnviromentObject = {Name:"", Helht:"", armor:"",PosX:"",PosY:"",ImageName:"",Width:"",Height:""}
