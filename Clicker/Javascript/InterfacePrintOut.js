@@ -9,9 +9,10 @@ function PrintOutGold(goldamount){
 
     var GameState = GetGameState()
 
-    ctx.font = "30px Arial";
-    ctx.fillText("Amount of gold: " + goldamount, 10, 40);
-    ctx.fillText("RunningState: " + GameState, 10, 40);
+    ctx.font = "24px Arial";
+    ctx.fillText("Amount of gold: " + goldamount, (canvas.clientWidth / 46), (canvas.clientHeight / 16));
+    ctx.fillText("RunningState: " + GameState, (canvas.clientWidth / 46) , (canvas.clientHeight / 8));
+    ctx.fillText("Click all enemies!!", (canvas.clientWidth / 46) , (canvas.clientHeight / 6));
 }
 
 function PrintOutEnemies(){

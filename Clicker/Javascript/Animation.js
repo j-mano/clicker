@@ -10,10 +10,10 @@ function DrawUpdate(){
 // Loading in the images / sprites of all enemies. Add them here to animate it. Dont Forget to add the if code in the foreachcode.
 var StickFigure = new Image();
 StickFigure.src = "Graphics/Enemies/Stick-figure.png";
-var Bird = new Image();
-Bird.src = "Graphics/Enemies/Stick-figure.png";
-var Orge = new Image();
-Orge.src = "Graphics/Enemies/Grinning_Orge.png";
+var Bird        = new Image();
+Bird.src        = "Graphics/Enemies/Stick-figure.png";
+var Orge        = new Image();
+Orge.src        = "Graphics/Enemies/Grinning_Orge.png";
 
 function drawEnemies(){
     var canvas  = document.getElementById("GameCanvas");
@@ -52,6 +52,11 @@ function DrawEnviroment(){
 
     var canvas  = document.getElementById("GameCanvas");
     var ctx     = canvas.getContext("2d");
+
+    // Castle
+    ctx.drawImage(Castle , (canvas.width / 4) * 3, (canvas.height / 4) * 2.75, treeSizeX * 2, treeSizeY * 2);
+    
+    // Trees
     ctx.drawImage(Tree, (canvas.width / 4) * 3.5, (canvas.height / 4) * 3.5, treeSizeX, treeSizeY);
     ctx.drawImage(Tree, (canvas.width / 4) * 3.5, (canvas.height / 4) * 2.5, treeSizeX, treeSizeY);
 }
